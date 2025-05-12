@@ -1,4 +1,4 @@
-let date1 = Date();
+let date1 = new Date();
 
 let dateLocale = date1.toLocaleString('fr-FR', {
     weekday: 'long',
@@ -7,4 +7,4 @@ let dateLocale = date1.toLocaleString('fr-FR', {
     day: 'numeric',
 });
 
-document.getElementById('date_du_jour').innerHTML = 'LE ' + dateLocale;
+document.getElementById('date_du_jour').innerHTML = 'Le ' + dateLocale;

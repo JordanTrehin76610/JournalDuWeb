@@ -30,7 +30,6 @@ header {
         background-color: $important-color;
         color: $important-text;
         width: 15%;
-        border: $border;
     }
 }
 
@@ -43,25 +42,36 @@ nav {
 
     h1 {
         display: inline;
-        border: $border;
+        padding-left: 1%;
 
-        span {
+        #web {
             display: inline-block;
-            width: 7%;
+            width: 4%;
         }
     }
 
     h2 {
         background-color: $important-color;
         color: $important-text;
+        font-size: 3rem;
+        border-radius: 1rem;
+        word-wrap: break-word;
+        margin-left: 1%;
+        padding: 1%;
     }
+
+    h3 {
+        padding-left: 1%;
+    }
+
 
 }
 
 .logo {
     display: flex;
     justify-content: start;
-    height: 10rem;
+    height: 15rem;
+    padding-top: 2%;
 }
 
 // MAIN
@@ -76,7 +86,6 @@ section {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    border: $border;
     display: grid;
     grid-template-columns: 20% 20% 20%;
     gap: 5%;
@@ -84,12 +93,13 @@ section {
 
 .container__card {
     background-color: $article-color;
-    border: $border;
+    height: 80%;
 
     h3 {
         background-color: $titre-color;
         color: $important-text;
         margin: 1%;
+        padding: 2%;
         font-family: "AlfaSlabOne";
         font-weight: lighter;
     }
@@ -117,7 +127,11 @@ section {
     margin: 5%;
     font-family: "AlfaSlabOne";
     font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 50%;
 }
+
 
 button {
     margin-left: 60%;
@@ -125,8 +139,9 @@ button {
     color: $important-text;
     display: flex;
     align-items: center;
-    height: 7%;
+    height: 5%;
     width: 40%;
+    border-radius: 0.2rem;
 
     .triangle {
         scale: 0.5;
@@ -146,4 +161,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "AlfaSlabOne";
 }
