@@ -1,6 +1,149 @@
-.title {
-    h1 {
-        font-size: 6rem;
-        color: red;
+// Je définie ce qui va être réutiliser plus tard. Les noms sont personnalisable
+
+$important-color: black;
+$important-text: white;
+$border: 1px solid red;
+$article-color: rgb(190, 190, 190);
+$titre-color: black;
+$sticker-color: rgb(255, 69, 69);
+$color-button: brown;
+
+@font-face {
+    font-family: "AlfaSlabOne";
+    src: url(../font/AlfaSlabOne-Regular.ttf)
+}
+
+body {
+    background-image: url(../img/fond.webp);
+    height: 100vh;
+    width: 99vw;
+    margin: 0;
+}
+
+// HEADER
+
+header {
+    span {
+        display: flex;
+        justify-self: end;
+        justify-content: end;
+        background-color: $important-color;
+        color: $important-text;
+        width: 15%;
+        border: $border;
     }
+}
+
+nav {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    font-family: "AlfaSlabOne";
+
+    h1 {
+        display: inline;
+        border: $border;
+
+        span {
+            display: inline-block;
+            width: 7%;
+        }
+    }
+
+    h2 {
+        background-color: $important-color;
+        color: $important-text;
+    }
+
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    height: 10rem;
+}
+
+// MAIN
+
+section {
+    display: flex;
+}
+
+.container {
+    justify-content: center;
+    height: 60%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: $border;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 5%;
+}
+
+.container__card {
+    background-color: $article-color;
+    border: $border;
+
+    h3 {
+        background-color: $titre-color;
+        color: $important-text;
+        margin: 1%;
+        font-family: "AlfaSlabOne";
+        font-weight: lighter;
+    }
+}
+
+.container__card--cadre {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    .text-cadre {
+        background-color: $sticker-color;
+        color: $important-text;
+        position: relative;
+        top: -1rem;
+    }
+
+    img {
+        height: 10rem;
+    }
+}
+
+.corp {
+    text-align: justify;
+    margin: 5%;
+    font-family: "AlfaSlabOne";
+    font-weight: lighter;
+}
+
+button {
+    margin-left: 60%;
+    background-color: $color-button;
+    color: $important-text;
+    display: flex;
+    align-items: center;
+    height: 7%;
+    width: 40%;
+
+    .triangle {
+        scale: 0.5;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 50px solid white;
+    }
+}
+
+// FOOTER
+
+footer {
+    height: 20%;
+    width: 100%;
+    background-color: $important-color;
+    color: $important-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

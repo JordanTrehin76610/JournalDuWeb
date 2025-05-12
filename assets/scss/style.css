@@ -1,4 +1,122 @@
-.title h1 {
-  font-size: 6rem;
-  color: red;
+@font-face {
+  font-family: "AlfaSlabOne";
+  src: url(../font/AlfaSlabOne-Regular.ttf);
+}
+body {
+  background-image: url(../img/fond.webp);
+  height: 100vh;
+  width: 99vw;
+  margin: 0;
+}
+
+header span {
+  display: flex;
+  justify-self: end;
+  justify-content: end;
+  background-color: black;
+  color: white;
+  width: 15%;
+  border: 1px solid red;
+}
+
+nav {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  font-family: "AlfaSlabOne";
+}
+nav h1 {
+  display: inline;
+  border: 1px solid red;
+}
+nav h1 span {
+  display: inline-block;
+  width: 7%;
+}
+nav h2 {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  height: 10rem;
+}
+
+section {
+  display: flex;
+}
+
+.container {
+  justify-content: center;
+  height: 60%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  gap: 5%;
+}
+
+.container__card {
+  background-color: rgb(190, 190, 190);
+  border: 1px solid red;
+}
+.container__card h3 {
+  background-color: black;
+  color: white;
+  margin: 1%;
+  font-family: "AlfaSlabOne";
+  font-weight: lighter;
+}
+
+.container__card--cadre {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.container__card--cadre .text-cadre {
+  background-color: rgb(255, 69, 69);
+  color: white;
+  position: relative;
+  top: -1rem;
+}
+.container__card--cadre img {
+  height: 10rem;
+}
+
+.corp {
+  text-align: justify;
+  margin: 5%;
+  font-family: "AlfaSlabOne";
+  font-weight: lighter;
+}
+
+button {
+  margin-left: 60%;
+  background-color: brown;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 7%;
+  width: 40%;
+}
+button .triangle {
+  scale: 0.5;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid white;
+}
+
+footer {
+  height: 20%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
