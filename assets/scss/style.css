@@ -282,7 +282,7 @@ footer {
     border-radius: 0.2rem;
   }
   button .triangle {
-    scale: 0.3;
+    scale: 0.5;
     border-top: 25px solid white;
     border-right: 12px solid transparent;
     border-left: 13px solid transparent;
