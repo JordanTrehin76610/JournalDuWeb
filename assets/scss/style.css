@@ -133,6 +133,7 @@ button .triangle {
   border-top: 25px solid white;
   border-right: 12px solid transparent;
   border-left: 13px solid transparent;
+  border-bottom: 0px solid transparent;
   scale: 0.5;
 }
 
@@ -287,6 +288,7 @@ footer {
     border-top: 25px solid white;
     border-right: 12px solid transparent;
     border-left: 13px solid transparent;
+    border-bottom: 0px solid transparent;
   }
   button:active {
     background-color: red;

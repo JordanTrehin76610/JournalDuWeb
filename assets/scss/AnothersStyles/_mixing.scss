@@ -24,26 +24,32 @@ $color-button: brown;
     src: url(../font/AlfaSlabOne-Regular.ttf)
 }
 
-@mixin TriangleDown {
-    border-top: 25px solid white;
-    border-right: 12px solid transparent;
-    border-left: 13px solid transparent;
-}
+@mixin Triangle($direction, $color) {
+    @if ($direction =="down") {
+        border-top: 25px solid $color;
+        border-right: 12px solid transparent;
+        border-left: 13px solid transparent;
+        border-bottom: 0px solid transparent;
+    }
 
-@mixin TriangleUp {
-    border-right: 13px solid transparent;
-    border-bottom: 25px solid white;
-    border-left: 12px solid transparent;
-}
+    @if ($direction =="up") {
+        border-right: 13px solid transparent;
+        border-bottom: 25px solid $color;
+        border-left: 12px solid transparent;
+        border-top: 0px solid transparent;
+    }
 
-@mixin TriangleLeft {
-    border-top: 12px solid transparent;
-    border-right: 25px solid white;
-    border-bottom: 13px solid transparent;
-}
+    @if ($direction =="left") {
+        border-top: 12px solid transparent;
+        border-right: 25px solid $color;
+        border-bottom: 13px solid transparent;
+        border-left: 0px solid transparent;
+    }
 
-@mixin TriangleRight {
-    border-top: 13px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 25px solid white;
+    @if ($direction =="right") {
+        border-top: 13px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 25px solid $color;
+        border-right: 0px solid transparent;
+    }
 }

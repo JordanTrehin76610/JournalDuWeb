@@ -139,7 +139,7 @@ button {
     justify-content: center;
 
     .triangle {
-        @include TriangleDown;
+        @include Triangle(down, white);
         scale: 0.5;
     }
 }
@@ -159,6 +159,9 @@ footer {
     align-items: center;
     font-family: "AlfaSlabOne";
 }
+
+
+
 
 
 
