@@ -129,6 +129,7 @@ button {
   height: 5%;
   width: 30%;
   border-radius: 0.2rem;
+  border-color: black;
   justify-content: center;
 }
 button .triangle {
@@ -154,7 +155,7 @@ footer {
   font-family: "AlfaSlabOne";
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   body {
     background-image: url(../img/fond.webp);
     height: 100vh;
@@ -186,7 +187,7 @@ footer {
   }
   nav h1 #web {
     display: inline-block;
-    width: 15%;
+    width: 10%;
   }
   nav h2 {
     background-color: black;
@@ -217,10 +218,9 @@ footer {
     margin-right: 10%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30rem 30rem 30rem;
-    gap: 20%;
-    margin-bottom: 250%;
-    height: 200%;
+    grid-template-rows: 19% 19% 19%;
+    gap: 15%;
+    margin-bottom: 30%;
   }
   .container__card {
     background-color: rgb(190, 190, 190);
@@ -235,9 +235,9 @@ footer {
   }
   .container__card:nth-child(1) {
     background-color: rgb(190, 190, 190);
+    height: 150%;
     grid-column: 1;
     grid-row: 1/2;
-    height: 150%;
   }
   .container__card:nth-child(2) {
     background-color: rgb(190, 190, 190);
@@ -275,14 +275,15 @@ footer {
     height: 40%;
   }
   button {
-    margin-left: 70%;
+    margin-left: 60%;
     background-color: brown;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5%;
-    width: 30%;
+    width: 40%;
+    border-color: black;
     border-radius: 0.2rem;
   }
   button .triangle {

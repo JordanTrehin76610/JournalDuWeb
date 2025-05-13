@@ -37,7 +37,7 @@
 
             #web {
                 display: inline-block;
-                width: 15%;
+                width: 10%;
             }
         }
 
@@ -78,10 +78,9 @@
         margin-right: 10%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 30rem 30rem 30rem;
-        gap: 20%;
-        margin-bottom: 250%;
-        height: 200%;
+        grid-template-rows: 19% 19% 19%;
+        gap: 15%;
+        margin-bottom: 30%;
     }
 
     .container__card {
@@ -98,9 +97,9 @@
 
     .container__card:nth-child(1) {
         background-color: mixing.$article-color;
+        height: 150%;
         grid-column: 1;
         grid-row: 1/2;
-        height: 150%;
     }
 
     .container__card:nth-child(2) {
@@ -143,14 +142,15 @@
 
 
     button {
-        margin-left: 70%;
+        margin-left: 60%;
         background-color: mixing.$color-button;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 5%;
-        width: 30%;
+        width: 40%;
+        border-color: black;
         border-radius: 0.2rem;
 
         .triangle {

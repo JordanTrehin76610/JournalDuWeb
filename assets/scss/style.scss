@@ -138,6 +138,7 @@ button {
     height: 5%;
     width: 30%;
     border-radius: 0.2rem;
+    border-color: black;
     justify-content: center;
 
     .triangle {
@@ -163,6 +164,6 @@ footer {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     @include mobile.MobileVersion();
 }
