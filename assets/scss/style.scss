@@ -47,13 +47,14 @@ nav {
         font-size: 3rem;
         border-radius: 1rem;
         word-wrap: break-word;
-        margin-left: 1%;
+        margin: 1%;
         padding: 1%;
     }
 
     h3 {
         padding-left: 1%;
         font-size: 2rem;
+        text-transform: uppercase;
     }
 
 
@@ -63,7 +64,6 @@ nav {
     display: flex;
     justify-content: start;
     height: 15rem;
-    padding-top: 2%;
 }
 
 // MAIN
@@ -82,6 +82,7 @@ section {
     grid-template-columns: 20% 20% 20%;
     gap: 5%;
     margin-bottom: -10rem;
+    margin-top: 1%;
 }
 
 .container__card {
@@ -91,7 +92,7 @@ section {
 
     h3 {
         @include mixing.blackNwhite();
-        margin: 1%;
+        margin: 2%;
         padding: 2%;
         font-family: "AlfaSlabOne";
         font-weight: lighter;
