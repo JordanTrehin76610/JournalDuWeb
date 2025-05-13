@@ -23,3 +23,27 @@ $color-button: brown;
     font-family: "AlfaSlabOne";
     src: url(../font/AlfaSlabOne-Regular.ttf)
 }
+
+@mixin TriangleDown {
+    border-top: 25px solid white;
+    border-right: 12px solid transparent;
+    border-left: 13px solid transparent;
+}
+
+@mixin TriangleUp {
+    border-right: 13px solid transparent;
+    border-bottom: 25px solid white;
+    border-left: 12px solid transparent;
+}
+
+@mixin TriangleLeft {
+    border-top: 12px solid transparent;
+    border-right: 25px solid white;
+    border-bottom: 13px solid transparent;
+}
+
+@mixin TriangleRight {
+    border-top: 13px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 25px solid white;
+}
