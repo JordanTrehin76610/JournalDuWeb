@@ -118,14 +118,15 @@ section {
 }
 
 button {
-  margin-left: 60%;
+  margin-left: 70%;
   background-color: brown;
   color: white;
   display: flex;
   align-items: center;
   height: 5%;
-  width: 40%;
+  width: 30%;
   border-radius: 0.2rem;
+  justify-content: center;
 }
 button .triangle {
   border-top: 25px solid white;
@@ -272,13 +273,14 @@ footer {
     height: 40%;
   }
   button {
-    margin-left: 60%;
+    margin-left: 70%;
     background-color: brown;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 5%;
-    width: 40%;
+    width: 30%;
     border-radius: 0.2rem;
   }
   button .triangle {

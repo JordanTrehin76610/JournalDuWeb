@@ -127,14 +127,15 @@ section {
 
 
 button {
-    margin-left: 60%;
+    margin-left: 70%;
     background-color: $color-button;
     color: white;
     display: flex;
     align-items: center;
     height: 5%;
-    width: 40%;
+    width: 30%;
     border-radius: 0.2rem;
+    justify-content: center;
 
     .triangle {
         @include TriangleDown;
