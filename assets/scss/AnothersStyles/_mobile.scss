@@ -1,3 +1,5 @@
+@use '_mixing.scss';
+
 @mixin MobileVersion {
     body {
         background-image: url(../img/fond.webp);
@@ -12,7 +14,7 @@
         span {
             position: absolute;
             right: 0;
-            @include blackNwhite();
+            @include mixing.blackNwhite();
             width: 30%;
             font-family: "AlfaSlabOne";
             font-size: 0.8em;
@@ -39,7 +41,7 @@
         }
 
         h2 {
-            @include blackNwhite();
+            @include mixing.blackNwhite();
             font-size: 1rem;
             border-radius: 1rem;
             word-wrap: break-word;
@@ -83,10 +85,10 @@
     }
 
     .container__card {
-        background-color: $article-color;
+        background-color: mixing.$article-color;
 
         h3 {
-            @include blackNwhite();
+            @include mixing.blackNwhite();
             margin: 1%;
             padding: 2%;
             font-family: "AlfaSlabOne";
@@ -95,21 +97,21 @@
     }
 
     .container__card:nth-child(1) {
-        background-color: $article-color;
+        background-color: mixing.$article-color;
         grid-column: 1;
         grid-row: 1/2;
         height: 150%;
     }
 
     .container__card:nth-child(2) {
-        background-color: $article-color;
+        background-color: mixing.$article-color;
         height: 150%;
         grid-column: 1;
         grid-row: 2/3;
     }
 
     .container__card:nth-child(3) {
-        background-color: $article-color;
+        background-color: mixing.$article-color;
         height: 170%;
         grid-column: 1;
         grid-row: 3/4;
@@ -121,7 +123,7 @@
         margin-right: 20%;
 
         .text-cadre {
-            @include freepng();
+            @include mixing.freepng();
         }
 
         img {
@@ -142,7 +144,7 @@
 
     button {
         margin-left: 70%;
-        background-color: $color-button;
+        background-color: mixing.$color-button;
         color: white;
         display: flex;
         align-items: center;
@@ -153,7 +155,7 @@
 
         .triangle {
             scale: 0.5;
-            @include Triangle(down, white);
+            @include mixing.Triangle(down, white);
         }
     }
 
@@ -166,7 +168,7 @@
     footer {
         height: 20%;
         width: 100%;
-        @include blackNwhite();
+        @include mixing.blackNwhite();
         display: flex;
         justify-content: center;
         align-items: center;
