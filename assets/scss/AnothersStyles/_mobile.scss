@@ -1,5 +1,4 @@
-@media (max-width: 480px) {
-
+@mixin MobileVersion {
     body {
         background-image: url(../img/fond.webp);
         height: 100vh;
@@ -157,6 +156,10 @@
             scale: 0.3;
             @include TriangleDown;
         }
+    }
+
+    button:active {
+        background-color: red;
     }
 
     // FOOTER

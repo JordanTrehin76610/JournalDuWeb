@@ -1,5 +1,3 @@
-@import url(AnothersStyles/_mixing.scss);
-@import url(AnothersStyles/_mobile.scss);
 @font-face {
   font-family: "AlfaSlabOne";
   src: url(../font/AlfaSlabOne-Regular.ttf);
@@ -130,10 +128,14 @@ button {
   border-radius: 0.2rem;
 }
 button .triangle {
+  border-top: 25px solid white;
+  border-right: 12px solid transparent;
+  border-left: 13px solid transparent;
   scale: 0.5;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 50px solid white;
+}
+
+button:hover {
+  background-color: red;
 }
 
 footer {
@@ -281,9 +283,12 @@ footer {
   }
   button .triangle {
     scale: 0.3;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 50px solid white;
+    border-top: 25px solid white;
+    border-right: 12px solid transparent;
+    border-left: 13px solid transparent;
+  }
+  button:active {
+    background-color: red;
   }
   footer {
     height: 20%;

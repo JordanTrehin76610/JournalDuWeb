@@ -1,5 +1,5 @@
-@import url(AnothersStyles/_mixing.scss);
-@import url(AnothersStyles/_mobile.scss);
+@import 'AnothersStyles/_mixing.scss';
+@import 'AnothersStyles/_mobile.scss';
 
 body {
     background-image: url(../img/fond.webp);
@@ -142,6 +142,10 @@ button {
     }
 }
 
+button:hover {
+    background-color: red;
+}
+
 // FOOTER
 
 footer {
@@ -152,4 +156,10 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: "AlfaSlabOne";
+}
+
+
+
+@media (max-width: 480px) {
+    @include MobileVersion();
 }
