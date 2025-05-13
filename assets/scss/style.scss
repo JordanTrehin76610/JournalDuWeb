@@ -85,7 +85,7 @@ section {
 
 .container__card {
     background-color: $article-color;
-    height: 65%;
+    height: 66%;
 
     h3 {
         @include blackNwhite();
@@ -98,7 +98,7 @@ section {
 }
 
 .container__card:nth-child(3) {
-    height: 74%;
+    height: 75%;
 }
 
 .container__card--cadre {

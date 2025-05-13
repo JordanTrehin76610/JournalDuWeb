@@ -76,7 +76,7 @@ section {
 
 .container__card {
   background-color: rgb(190, 190, 190);
-  height: 65%;
+  height: 66%;
 }
 .container__card h3 {
   background-color: black;
@@ -89,7 +89,7 @@ section {
 }
 
 .container__card:nth-child(3) {
-  height: 74%;
+  height: 75%;
 }
 
 .container__card--cadre {
