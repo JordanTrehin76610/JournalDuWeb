@@ -16,6 +16,7 @@ header span {
   color: white;
   width: 15%;
   font-family: "AlfaSlabOne";
+  text-align: end;
 }
 
 nav {
