@@ -16,6 +16,7 @@ header span {
   color: white;
   width: 15%;
   margin-left: 85%;
+  font-family: "AlfaSlabOne";
 }
 
 nav {
@@ -70,6 +71,7 @@ section {
   display: grid;
   grid-template-columns: 20% 20% 20%;
   gap: 5%;
+  margin-bottom: -7rem;
 }
 
 .container__card {
