@@ -1,0 +1,25 @@
+// Je définie ce qui va être réutiliser plus tard. Les noms sont personnalisable
+
+
+$border: 1px solid red;
+$article-color: rgb(190, 190, 190);
+$titre-color: black;
+$color-button: brown;
+
+
+@mixin blackNwhite {
+    background-color: black;
+    color: white;
+}
+
+@mixin freepng {
+    background-color: rgb(255, 69, 69);
+    color: white;
+    position: relative;
+    top: -1rem;
+}
+
+@font-face {
+    font-family: "AlfaSlabOne";
+    src: url(../font/AlfaSlabOne-Regular.ttf)
+}

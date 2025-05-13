@@ -1,3 +1,5 @@
+@import url(AnothersStyles/_mixing.scss);
+@import url(AnothersStyles/_mobile.scss);
 @font-face {
   font-family: "AlfaSlabOne";
   src: url(../font/AlfaSlabOne-Regular.ttf);
