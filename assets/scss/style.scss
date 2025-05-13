@@ -104,12 +104,12 @@ section {
     display: grid;
     grid-template-columns: 20% 20% 20%;
     gap: 5%;
-    margin-bottom: -7rem;
+    margin-bottom: -10rem;
 }
 
 .container__card {
     background-color: $article-color;
-    height: 80%;
+    height: 65%;
 
     h3 {
         @include blackNwhite();
@@ -117,7 +117,12 @@ section {
         padding: 2%;
         font-family: "AlfaSlabOne";
         font-weight: lighter;
+        font-size: 2.5rem;
     }
+}
+
+.container__card:nth-child(3) {
+    height: 74%;
 }
 
 .container__card--cadre {
@@ -141,7 +146,7 @@ section {
     font-weight: lighter;
     text-overflow: ellipsis;
     overflow: hidden;
-    height: 50%;
+    height: 30%;
 }
 
 
