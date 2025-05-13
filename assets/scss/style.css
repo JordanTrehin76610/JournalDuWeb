@@ -29,10 +29,11 @@ nav h1 {
   display: inline;
   padding-left: 1%;
   color: gray;
+  font-size: 2rem;
 }
 nav h1 #web {
   display: inline-block;
-  width: 4%;
+  width: 5%;
   margin-left: 0;
 }
 nav h2 {
@@ -46,6 +47,7 @@ nav h2 {
 }
 nav h3 {
   padding-left: 1%;
+  font-size: 2rem;
 }
 
 .logo {
