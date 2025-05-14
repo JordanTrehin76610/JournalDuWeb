@@ -1,6 +1,6 @@
 @use '_mixing.scss';
 
-@mixin MobileVersion {
+@mixin TabletteVersion {
     body {
         background-image: url(../img/fond.webp);
         height: 100vh;
@@ -26,13 +26,13 @@
         height: 30%;
         max-width: 100%;
         display: flex;
-        margin-top: 10%;
         font-family: "AlfaSlabOne";
+        margin-top: 5%;
 
         h1 {
             display: inline;
             padding-left: 1%;
-            font-size: 1rem;
+            font-size: 1.5rem;
             color: gray;
 
             #web {
@@ -43,7 +43,7 @@
 
         h2 {
             @include mixing.blackNwhite();
-            font-size: 1rem;
+            font-size: 1.5rem;
             border-radius: 0.5rem;
             word-wrap: break-word;
             margin-left: 1%;
@@ -52,7 +52,7 @@
 
         h3 {
             padding-left: 1%;
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
 
@@ -61,7 +61,7 @@
     .logo {
         display: flex;
         justify-content: start;
-        height: 3rem;
+        height: 4rem;
     }
 
     // MAIN
@@ -79,8 +79,8 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 19% 19% 19%;
-        gap: 15%;
-        margin-bottom: 30%;
+        gap: 20%;
+        margin-bottom: 40%;
     }
 
     .container__card {
@@ -97,21 +97,21 @@
 
     .container__card:nth-child(1) {
         background-color: mixing.$article-color;
-        height: 150%;
+        height: 180%;
         grid-column: 1;
         grid-row: 1/2;
     }
 
     .container__card:nth-child(2) {
         background-color: mixing.$article-color;
-        height: 150%;
+        height: 180%;
         grid-column: 1;
         grid-row: 2/3;
     }
 
     .container__card:nth-child(3) {
         background-color: mixing.$article-color;
-        height: 170%;
+        height: 180%;
         grid-column: 1;
         grid-row: 3/4;
     }
@@ -137,7 +137,7 @@
         font-weight: lighter;
         text-overflow: ellipsis;
         overflow: hidden;
-        height: 40%;
+        height: 34%;
     }
 
 

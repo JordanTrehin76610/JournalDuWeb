@@ -1,10 +1,10 @@
 @use '_mixing.scss';
 
-@mixin MobileVersion {
+@mixin OrdiPortableVersion {
     body {
         background-image: url(../img/fond.webp);
         height: 100vh;
-        max-width: 100%;
+        width: 99vw;
         margin: 0 auto;
     }
 
@@ -13,46 +13,48 @@
     header {
         span {
             position: absolute;
-            @include mixing.blackNwhite();
-            width: 30%;
-            font-family: "AlfaSlabOne";
-            font-size: 0.8em;
-            text-align: start;
             right: 0;
+            @include mixing.blackNwhite();
+            width: 15%;
+            font-family: "AlfaSlabOne";
+            text-align: end;
         }
     }
 
     nav {
         height: 30%;
-        max-width: 100%;
+        width: 100%;
         display: flex;
-        margin-top: 10%;
+        margin-top: 2%;
         font-family: "AlfaSlabOne";
 
         h1 {
             display: inline;
             padding-left: 1%;
-            font-size: 1rem;
             color: gray;
+            font-size: 2rem;
 
             #web {
                 display: inline-block;
                 width: 10%;
+                margin-left: 0;
+                position: static;
             }
         }
 
         h2 {
             @include mixing.blackNwhite();
-            font-size: 1rem;
-            border-radius: 0.5rem;
+            font-size: 3rem;
+            border-radius: 1rem;
             word-wrap: break-word;
-            margin-left: 1%;
+            margin: 1%;
             padding: 1%;
         }
 
         h3 {
             padding-left: 1%;
-            font-size: 0.8rem;
+            font-size: 2rem;
+            text-transform: uppercase;
         }
 
 
@@ -61,7 +63,7 @@
     .logo {
         display: flex;
         justify-content: start;
-        height: 3rem;
+        height: 15rem;
     }
 
     // MAIN
@@ -72,48 +74,34 @@
 
     .container {
         justify-content: center;
-        width: 80%;
-        height: 100%;
+        height: 60%;
+        width: 100%;
         margin-left: 10%;
         margin-right: 10%;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 19% 19% 19%;
-        gap: 15%;
-        margin-bottom: 30%;
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
+        margin-bottom: -10rem;
+        margin-top: 1%;
     }
 
     .container__card {
         background-color: mixing.$article-color;
+        height: 65%;
+        box-shadow: 0.5rem 0.5rem 1rem;
 
         h3 {
             @include mixing.blackNwhite();
-            margin: 1%;
+            margin: 2%;
             padding: 2%;
             font-family: "AlfaSlabOne";
             font-weight: lighter;
+            font-size: 2.5rem;
         }
     }
 
-    .container__card:nth-child(1) {
-        background-color: mixing.$article-color;
-        height: 150%;
-        grid-column: 1;
-        grid-row: 1/2;
-    }
-
-    .container__card:nth-child(2) {
-        background-color: mixing.$article-color;
-        height: 150%;
-        grid-column: 1;
-        grid-row: 2/3;
-    }
-
     .container__card:nth-child(3) {
-        background-color: mixing.$article-color;
-        height: 170%;
-        grid-column: 1;
-        grid-row: 3/4;
+        height: 65%;
     }
 
     .container__card--cadre {
@@ -137,7 +125,7 @@
         font-weight: lighter;
         text-overflow: ellipsis;
         overflow: hidden;
-        height: 40%;
+        height: 30%;
     }
 
 
@@ -147,26 +135,26 @@
         color: white;
         display: flex;
         align-items: center;
-        justify-content: center;
         height: 5%;
         width: 40%;
-        border-color: black;
         border-radius: 0.2rem;
+        border-color: black;
+        justify-content: center;
 
         .triangle {
-            scale: 0.5;
             @include mixing.Triangle(down, white);
+            scale: 0.5;
         }
     }
 
-    button:active {
+    button:hover {
         background-color: red;
     }
 
     // FOOTER
 
     footer {
-        height: 10%;
+        height: 20%;
         width: 100%;
         @include mixing.blackNwhite();
         display: flex;
