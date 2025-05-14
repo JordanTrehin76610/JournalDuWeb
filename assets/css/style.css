@@ -30,7 +30,7 @@ nav h1 {
   display: inline;
   padding-left: 1%;
   color: gray;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 nav h1 #web {
   display: inline-block;
@@ -41,7 +41,7 @@ nav h1 #web {
 nav h2 {
   background-color: black;
   color: white;
-  font-size: 3rem;
+  font-size: clamp(1rem, 3vw, 3rem);
   border-radius: 1rem;
   word-wrap: break-word;
   margin: 1%;
@@ -49,7 +49,7 @@ nav h2 {
 }
 nav h3 {
   padding-left: 1%;
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 2vw, 2rem);
   text-transform: uppercase;
 }
 
@@ -182,7 +182,7 @@ footer {
   nav h1 {
     display: inline;
     padding-left: 1%;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: gray;
   }
   nav h1 #web {
@@ -192,7 +192,7 @@ footer {
   nav h2 {
     background-color: black;
     color: white;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 3rem);
     border-radius: 0.5rem;
     word-wrap: break-word;
     margin-left: 1%;
@@ -200,7 +200,7 @@ footer {
   }
   nav h3 {
     padding-left: 1%;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
   }
   .logo {
     display: flex;
@@ -334,7 +334,7 @@ footer {
   nav h1 {
     display: inline;
     padding-left: 1%;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: gray;
   }
   nav h1 #web {
@@ -344,7 +344,7 @@ footer {
   nav h2 {
     background-color: black;
     color: white;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 3rem);
     border-radius: 0.5rem;
     word-wrap: break-word;
     margin-left: 1%;
@@ -352,7 +352,7 @@ footer {
   }
   nav h3 {
     padding-left: 1%;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
   }
   .logo {
     display: flex;
@@ -486,7 +486,7 @@ footer {
   nav h1 {
     display: inline;
     padding-left: 1%;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: gray;
   }
   nav h1 #web {
@@ -496,7 +496,7 @@ footer {
   nav h2 {
     background-color: black;
     color: white;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 3rem);
     border-radius: 0.5rem;
     word-wrap: break-word;
     margin-left: 1%;
@@ -504,7 +504,7 @@ footer {
   }
   nav h3 {
     padding-left: 1%;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
   }
   .logo {
     display: flex;
@@ -638,7 +638,7 @@ footer {
   nav h1 {
     display: inline;
     padding-left: 1%;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     color: gray;
   }
   nav h1 #web {
@@ -648,7 +648,7 @@ footer {
   nav h2 {
     background-color: black;
     color: white;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 3rem);
     border-radius: 0.5rem;
     word-wrap: break-word;
     margin-left: 1%;
@@ -656,7 +656,7 @@ footer {
   }
   nav h3 {
     padding-left: 1%;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
   }
   .logo {
     display: flex;

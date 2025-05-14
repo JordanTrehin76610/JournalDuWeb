@@ -37,7 +37,7 @@ nav {
         display: inline;
         padding-left: 1%;
         color: gray;
-        font-size: 2rem;
+        font-size: clamp(1rem, 2vw, 2rem);
 
         #web {
             display: inline-block;
@@ -49,7 +49,7 @@ nav {
 
     h2 {
         @include mixing.blackNwhite();
-        font-size: 3rem;
+        font-size: clamp(1rem, 3vw, 3rem);
         border-radius: 1rem;
         word-wrap: break-word;
         margin: 1%;
@@ -58,7 +58,7 @@ nav {
 
     h3 {
         padding-left: 1%;
-        font-size: 2rem;
+        font-size: clamp(0.8rem, 2vw, 2rem);
         text-transform: uppercase;
     }
 
