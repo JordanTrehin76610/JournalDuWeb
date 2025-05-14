@@ -86,13 +86,13 @@ section {
     display: grid;
     grid-template-columns: 20% 20% 20%;
     gap: 5%;
-    margin-bottom: -10rem;
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .container__card {
     background-color: mixing.$article-color;
-    height: 66%;
+    height: 92%;
     box-shadow: 0.5rem 0.5rem 1rem;
 
     h3 {
@@ -106,7 +106,7 @@ section {
 }
 
 .container__card:nth-child(3) {
-    height: 75%;
+    height: 100%;
 }
 
 .container__card--cadre {
@@ -124,13 +124,15 @@ section {
 }
 
 .corp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
     text-align: justify;
     margin: 5%;
     font-family: "AlfaSlabOne";
     font-weight: lighter;
-    text-overflow: ellipsis;
     overflow: hidden;
-    height: 30%;
 }
 
 
