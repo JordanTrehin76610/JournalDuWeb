@@ -2,6 +2,7 @@
 @use 'AnothersStyles/_mobile.scss';
 @use 'AnothersStyles/tablette';
 @use 'AnothersStyles/ordiportable';
+@use 'AnothersStyles/ordiportableL';
 
 body {
     background-image: url(../img/fond.webp);
@@ -176,4 +177,8 @@ footer {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     @include ordiportable.OrdiPortableVersion();
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    @include ordiportableL.OrdiPortableLVersion();
 }
