@@ -3,6 +3,8 @@
 @use 'AnothersStyles/tablette';
 @use 'AnothersStyles/ordiportable';
 @use 'AnothersStyles/ordiportableL';
+@use 'AnothersStyles/mobileS';
+@use 'AnothersStyles/mobileM';
 
 body {
     background-image: url(../img/fond.webp);
@@ -167,7 +169,15 @@ footer {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
+    @include mobileS.MobileSVersion();
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    @include mobileM.MobileMVersion();
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
     @include mobile.MobileVersion();
 }
 
