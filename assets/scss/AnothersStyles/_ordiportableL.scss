@@ -81,13 +81,13 @@
         display: grid;
         grid-template-columns: 30% 30% 30%;
         gap: 5%;
-        margin-bottom: -10rem;
+        margin-bottom: 5%;
         margin-top: 1%;
     }
 
     .container__card {
         background-color: mixing.$article-color;
-        height: 70%;
+        height: 92%;
         box-shadow: 0.5rem 0.5rem 1rem;
 
         h3 {
@@ -101,7 +101,7 @@
     }
 
     .container__card:nth-child(3) {
-        height: 79%;
+        height: 100%;
     }
 
     .container__card--cadre {
@@ -119,14 +119,15 @@
     }
 
     .corp {
-        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 9;
+        line-clamp: 9;
         text-align: justify;
         margin: 5%;
         font-family: "AlfaSlabOne";
         font-weight: lighter;
-        text-overflow: ellipsis;
         overflow: hidden;
-        height: 30%;
     }
 
 

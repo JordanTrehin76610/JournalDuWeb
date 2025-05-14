@@ -79,8 +79,8 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20%;
-        gap: 10%;
-        margin-bottom: 0;
+        gap: 20%;
+        margin-bottom: 100%;
     }
 
     .container__card {
@@ -97,21 +97,21 @@
 
     .container__card:nth-child(1) {
         background-color: mixing.$article-color;
-        height: 135%;
+        height: 172%;
         grid-column: 1;
         grid-row: 1/2;
     }
 
     .container__card:nth-child(2) {
         background-color: mixing.$article-color;
-        height: 119%;
+        height: 157%;
         grid-column: 1;
         grid-row: 2/3;
     }
 
     .container__card:nth-child(3) {
         background-color: mixing.$article-color;
-        height: 135%;
+        height: 172%;
         grid-column: 1;
         grid-row: 3/4;
     }
@@ -131,14 +131,15 @@
     }
 
     .corp {
-        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 9;
+        line-clamp: 9;
         text-align: justify;
         margin: 5%;
         font-family: "AlfaSlabOne";
         font-weight: lighter;
-        text-overflow: ellipsis;
         overflow: hidden;
-        height: 40%;
     }
 
 
